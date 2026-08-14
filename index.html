@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oniria Caravaning — Alquiler de autocaravanas en Castelldefels, Barcelona. Viaja por Europa con comodidad y libertad.">
+  <title>Oniria Caravaning | Alquiler de autocaravanas en Castelldefels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#inicio">ONIRIA <span>CARAVANING</span></a>
+    <nav>
+      <a href="#autocaravana" data-i18n="nav_motorhome">La autocaravana</a>
+      <a href="#incluido" data-i18n="nav_included">Incluido</a>
+      <a href="#precios" data-i18n="nav_prices">Precios</a>
+      <a href="#reservar" data-i18n="nav_booking">Disponibilidad</a>
+      <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang active" data-lang="es">ES</button>
+      <span>/</span>
+      <button class="lang" data-lang="en">EN</button>
+      <a class="btn btn-small" href="#reservar" data-i18n="cta_book">Consultar disponibilidad</a>
+    </div>
+    <button class="menu" aria-label="Menu">☰</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero_eyebrow">CASTELLDEFELS · BARCELONA</p>
+        <h1 data-i18n="hero_title">Tu aventura<br><em>empieza aquí.</em></h1>
+        <p class="hero-copy" data-i18n="hero_copy">Alquila tu autocaravana y descubre Europa con total comodidad, libertad y espacio.</p>
+        <div class="hero-buttons">
+          <a class="btn" href="#reservar" data-i18n="cta_book">Consultar disponibilidad</a>
+          <a class="text-link" href="#autocaravana" data-i18n="cta_discover">Descubrir la autocaravana →</a>
+        </div>
+      </div>
+      <div class="hero-price"><small data-i18n="from">Desde</small><strong>130€</strong><small data-i18n="per_day">/ día</small></div>
+    </section>
+
+    <section class="intro section">
+      <div>
+        <p class="eyebrow dark" data-i18n="intro_eyebrow">VIAJAR, PERO A TU MANERA</p>
+        <h2 data-i18n="intro_title">Una casa sobre ruedas<br>para tu próxima historia.</h2>
+      </div>
+      <p data-i18n="intro_copy">Sal de Castelldefels y pon rumbo donde quieras. Hemos preparado nuestra autocaravana para que solo tengas que preocuparte de elegir el destino.</p>
+    </section>
+
+    <section id="autocaravana" class="motorhome section">
+      <div class="photo-card large">
+        <img src="images/autocaravana-oniria.png" alt="Interior de la autocaravana Oniria">
+      </div>
+      <div class="motorhome-content">
+        <p class="eyebrow dark" data-i18n="motor_eyebrow">LA AUTOCARAVANA</p>
+        <h2 data-i18n="motor_title">Espacio para compartir.</h2>
+        <p data-i18n="motor_copy">Hasta 6 personas pueden viajar cómodamente, con tres camas dobles, cocina, baño y todo lo necesario para sentirse como en casa mientras recorres Europa.</p>
+        <div class="spec-grid">
+          <div><strong>6</strong><span data-i18n="spec_guests">plazas</span></div>
+          <div><strong>3</strong><span data-i18n="spec_beds">camas dobles</span></div>
+          <div><strong>24h</strong><span data-i18n="spec_assistance">asistencia</span></div>
+          <div><strong>130€</strong><span data-i18n="spec_from">desde / día</span></div>
+        </div>
+        <a class="underlined" href="#incluido" data-i18n="see_included">Ver todo lo incluido →</a>
+      </div>
+    </section>
+
+    <section id="incluido" class="included section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark" data-i18n="included_eyebrow">TODO PREPARADO</p>
+          <h2 data-i18n="included_title">Llega, sube y disfruta.</h2>
+        </div>
+        <p data-i18n="included_copy">Queremos que el viaje empiece desde el primer minuto. Por eso el alquiler incluye el equipamiento esencial.</p>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h3 data-i18n="f1_title">Cocina equipada</h3><p data-i18n="f1_copy">Utensilios de cocina y 2 bombonas de gas.</p></article>
+        <article><span>02</span><h3 data-i18n="f2_title">Seguro a todo riesgo</h3><p data-i18n="f2_copy">Viaja con tranquilidad durante tu aventura.</p></article>
+        <article><span>03</span><h3 data-i18n="f3_title">Asistencia 24h</h3><p data-i18n="f3_copy">Estamos disponibles cuando lo necesites.</p></article>
+        <article><span>04</span><h3 data-i18n="f4_title">Kit de viaje</h3><p data-i18n="f4_copy">Sábanas, toallas, mesa y sillas de camping.</p></article>
+      </div>
+    </section>
+
+    <section id="precios" class="pricing section">
+      <div class="pricing-box">
+        <div>
+          <p class="eyebrow" data-i18n="price_eyebrow">TARIFAS</p>
+          <h2 data-i18n="price_title">Tu próxima escapada<br>desde <em>130€ al día.</em></h2>
+        </div>
+        <div class="price-side">
+          <strong>130€</strong>
+          <span data-i18n="per_day">/ día</span>
+          <small data-i18n="price_note">Precio orientativo. El precio final depende de las fechas y condiciones de la reserva.</small>
+          <a class="btn light" href="#reservar" data-i18n="check_dates">Comprobar fechas</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservar" class="booking section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark" data-i18n="booking_eyebrow">PLANIFICA TU VIAJE</p>
+          <h2 data-i18n="booking_title">Comprueba disponibilidad.</h2>
+        </div>
+        <p data-i18n="booking_copy">Selecciona tus fechas para obtener una estimación. En esta primera versión, la solicitud queda pendiente de confirmación.</p>
+      </div>
+
+      <div class="booking-card">
+        <div class="booking-fields">
+          <label><span data-i18n="pickup">Recogida</span><input id="startDate" type="date"></label>
+          <label><span data-i18n="return">Devolución</span><input id="endDate" type="date"></label>
+          <label><span data-i18n="guests">Viajeros</span><select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        </div>
+        <div class="estimate">
+          <div><span data-i18n="nights">Días de alquiler</span><strong id="days">—</strong></div>
+          <div><span data-i18n="estimated">Estimación</span><strong id="total">—</strong></div>
+        </div>
+        <p id="bookingMessage" class="booking-message"></p>
+        <button class="btn full" id="requestBtn" data-i18n="request">Solicitar reserva</button>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="gallery-main"><img src="images/autocaravana-oniria.png" alt="Autocaravana Oniria — interior"></div>
+      <div class="gallery-copy">
+        <p class="eyebrow dark" data-i18n="gallery_eyebrow">DENTRO DE ONIRIA</p>
+        <h2 data-i18n="gallery_title">Cómoda de día.<br>Acogedora de noche.</h2>
+        <p data-i18n="gallery_copy">Un espacio pensado para cocinar, descansar, compartir y despertar cada día en un lugar diferente.</p>
+        <a class="underlined" href="#contacto" data-i18n="ask_more">¿Tienes alguna pregunta? →</a>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact section">
+      <div>
+        <p class="eyebrow dark" data-i18n="contact_eyebrow">¿HABLAMOS?</p>
+        <h2 data-i18n="contact_title">Tu viaje empieza<br>con un mensaje.</h2>
+      </div>
+      <div class="contact-right">
+        <p data-i18n="contact_copy">Recogida en Castelldefels, Gavà o el aeropuerto de Barcelona. Escríbenos y te ayudamos a preparar tu viaje.</p>
+        <a class="contact-line" href="#reservar">WhatsApp <span>↗</span></a>
+        <a class="contact-line" href="mailto:hola@oniriacaravaning.com">hola@oniriacaravaning.com <span>↗</span></a>
+        <a class="contact-line" href="#">Instagram <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">ONIRIA <span>CARAVANING</span></div>
+    <p data-i18n="footer">Alquiler de autocaravanas · Castelldefels, Barcelona</p>
+    <div><a href="#" data-i18n="privacy">Privacidad</a><a href="#" data-i18n="terms">Condiciones</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
