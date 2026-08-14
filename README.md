@@ -1,35 +1,33 @@
-# Oniria Caravaning — Website v1
+# Oniria Caravaning — Website v2
 
-This is the first frontend prototype for Oniria Caravaning.
+This is the second frontend version for Oniria Caravaning. 
+We pivoted from a placeholder booking form to a direct-contact approach to improve conversion and simplify the user flow.
 
 ## What works now
 
 - Responsive landing page
-- Real uploaded reference photo
+- Real uploaded photo gallery (optimized grid)
 - Spanish / English language switcher
-- Motorhome information
-- Included equipment
+- Motorhome information & included equipment
 - Pricing section
-- Date selection
-- Rental-day calculation
-- Estimated price calculation
-- Reservation-request UX placeholder
+- **New:** FAQ (Frequently Asked Questions) accordion
+- **New:** Direct WhatsApp integration for reservations and inquiries
+- **New:** Quick links to Instagram and Google Reviews
 - Mobile navigation
 - SEO basics
 
-## What is NOT connected yet
+## Changes from v1
 
-The reservation system is intentionally frontend-only in v1.
+- Removed the frontend-only reservation form (date selection and price calculation).
+- Replaced the single interior image with a full photo gallery grid.
+- Simplified the call-to-actions to route directly to WhatsApp (`wa.me`).
 
-Next phase:
-1. Supabase database
-2. Real availability calendar
-3. Confirmed / pending / cancelled reservations
-4. Admin dashboard
-5. Email / WhatsApp notifications
-6. Real contact details
-7. Legal pages
-8. Payment integration later if desired
+## Next phase (Future features)
+
+1. Legal pages (Privacy Policy, Terms & Conditions)
+2. Supabase database (if an automated booking system is required later)
+3. Admin dashboard
+4. Payment integration
 
 ## Run locally
 
@@ -39,4 +37,4 @@ For the cleanest local development experience, use VS Code + Live Server or any 
 
 ## Deploy
 
-This folder can later be uploaded to GitHub and deployed through Cloudflare Pages.
+This folder is ready to be hosted on GitHub Pages or deployed through Cloudflare Pages / Vercel.
