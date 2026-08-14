@@ -61,3 +61,57 @@ document.querySelector(".menu").addEventListener("click", () => {
 });
 
 setLanguage("es");
+
+
+/* --- LÓGICA DEL SLIDER AUTOMÁTICO Y LIGHTBOX (V4) --- */
+
+// Slider Automático
+const track = document.getElementById('galleryTrack');
+let autoScroll;
+
+function startAutoScroll() {
+  if (!track) return;
+  autoScroll = setInterval(() => {
+    track.scrollLeft += 1; // Velocidad de movimiento
+    // Reinicia el slider si llega al final
+    if (track.scrollLeft >= (track.scrollWidth - track.clientWidth - 1)) {
+      track.scrollLeft = 0;
+    }
+  }, 20); // Intervalo de tiempo
+}
+
+if (track) {
+  startAutoScroll();
+  // Pausa cuando el ratón está encima para poder mirar o hacer clic
+  track.addEventListener('mouseenter', () => clearInterval(autoScroll));
+  track.addEventListener('mouseleave', startAutoScroll);
+}
+
+// Lightbox (ampliar imágenes al hacer clic)
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox-close');
+
+// Asigna el evento a todas las imágenes dentro del slider
+document.querySelectorAll('.slider-img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src; // Pone la ruta de la imagen en grande
+  });
+});
+
+// Cerrar el lightbox con la X
+if (closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+}
+
+// Cerrar el lightbox haciendo clic fuera de la imagen (en el fondo oscuro)
+if (lightbox) {
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = 'none';
+    }
+  });
+}
